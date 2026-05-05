@@ -300,7 +300,9 @@
           bar.style.width=p+'%'; pct.textContent=Math.round(p)+'% complete';
           if(p>=100){ clearInterval(iv); setTimeout(function(){
             var params=new URLSearchParams(window.location.search);
-            window.location.href='https://vsl1.primevitalabs.com'+(params.toString()?'?'+params.toString():'');
+            var p=new URLSearchParams(window.location.search);
+            var tid=p.get('tid')||p.get('clickid')||'';
+            window.location.href='https://vsl1.primevitalabs.com/?tid='+encodeURIComponent(tid)+'&affiliate=arkaff01';
           },600); }
         },200);
       }
