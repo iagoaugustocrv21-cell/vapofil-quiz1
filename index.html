@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Rápido</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page active" id="page1">
+    <section class="card">
+      <div class="step">Pergunta 1 de 2</div>
+      <div class="progress"><span style="width:50%"></span></div>
+
+      <h1>O Motivo Oculto Pelo Qual Homens <span>Falham na Cama...</span></h1>
+      <p class="subtitle">Este ritual de 15 segundos está restaurando a performance máxima em homens de 35, 45 e 55+ sem remédios, sem médico, ninguém precisa saber. Responda 1 pergunta rápida para descobrir sua solução exata.</p>
+
+      <h2>Se em 7 dias você recuperasse a performance de verdade — <span>o que muda primeiro?</span></h2>
+
+      <div class="answers">
+        <button onclick="goPage2()">Paro de deixar ela tomar a iniciativa por medo de falhar</button>
+        <button onclick="goPage2()">Volto a me sentir homem dentro do meu próprio relacionamento</button>
+        <button onclick="goPage2()">Me torno a história que ela conta pras amigas</button>
+        <button onclick="goPage2()">Tudo. Minha relação comigo mesmo muda completamente</button>
+      </div>
+
+      <div class="testimonials">
+        <div class="quote">“Em 7 dias voltei a ser o homem que ela conheceu. Minha ex ligou implorando pra voltar.” <b>– Rafael, 36</b></div>
+        <div class="quote">“Não conseguia terminar de jeito nenhum. Achava que era estresse. O truque resolveu em 3 dias.” <b>– Eduardo, 39</b></div>
+        <div class="quote">“Ela parou de tomar a iniciativa. Resolvi sem dizer uma palavra. Agora ela me manda mensagem do outro quarto.” <b>– Lucas, 29</b></div>
+      </div>
+
+      <a class="skip" href="https://fluxodata.site/vick-app/">Pular o Quiz, Revelar o Ritual de 15 Seg Agora! <strong>≫</strong></a>
+      <p class="privacy">🔒 Ninguém precisa saber que você está vendo isso.</p>
+    </section>
+  </main>
+
+  <main class="page" id="page2">
+    <section class="card page2-card">
+      <div class="step">Pergunta 2 de 2</div>
+      <div class="progress"><span style="width:100%"></span></div>
+
+      <h1 class="final-title">Última coisa... Se o Truque do Vick Vaporub funcionar de verdade você está pronto pra <span>começar hoje à noite?</span></h1>
+
+      <div class="answers big">
+        <button onclick="redirectFinal()">Sim — chega de esperar, quero começar hoje</button>
+        <button onclick="redirectFinal()">Provavelmente — se for tão simples quanto dizem</button>
+        <button onclick="redirectFinal()">Talvez — já tentei coisas antes e me decepcionei</button>
+        <button onclick="redirectFinal()">Não sei — mas estou curioso o suficiente pra assistir</button>
+      </div>
+
+      <p class="privacy bottom">🔒 Suas respostas são 100% confidenciais.<br>Ninguém terá acesso ao que você escolher.</p>
+    </section>
+  </main>
+
+  <script>
+    function goPage2() {
+      document.getElementById('page1').classList.remove('active');
+      document.getElementById('page2').classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    function redirectFinal() {
+      window.location.href = 'https://fluxodata.site/vick-app/';
+    }
+  </script>
+</body>
+</html>
